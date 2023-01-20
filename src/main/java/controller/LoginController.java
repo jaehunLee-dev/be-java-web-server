@@ -54,6 +54,8 @@ public class LoginController implements Controller{
         return body;
     }
 
+    //new branch
+
     private byte[] dynamicListPage(byte[] body){
         Collection<User> users = userService.findUsers();
         return HtmlEditor.appendUserList(body,users);
