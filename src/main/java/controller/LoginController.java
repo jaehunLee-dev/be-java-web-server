@@ -58,7 +58,7 @@ public class LoginController implements Controller{
         Collection<User> users = userService.findUsers();
         return HtmlEditor.appendUserList(body,users);
     }
-
+//test branch
     private byte[] getStaticBody(RequestMessage requestMessage){
         if (requestMessage.getRequestHeaderMessage().getHttpOnlyURL().contains(".")) {
             String fileURL = RELATIVE_PATH + requestMessage.getRequestHeaderMessage().getSubPath() + requestMessage.getRequestHeaderMessage().getHttpOnlyURL();
